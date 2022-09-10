@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @weight_history %>
+
+<div>
+  <%= link_to "Edit this weight history", edit_weight_history_path(@weight_history) %> |
+  <%= link_to "Back to weight histories", weight_histories_path %>
+
+  <%= button_to "Destroy this weight history", @weight_history, method: :delete %>
+</div>

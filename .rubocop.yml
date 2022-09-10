@@ -1,0 +1,16 @@
+inherit_from: .rubocop_todo.yml
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+# AllCopsオプションで全てのCopsを対象にできる
+AllCops:
+  DisabledByDefault: true
+  Exclude:
+    - "gems/**/*"
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false
